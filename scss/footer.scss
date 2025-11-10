@@ -1,0 +1,58 @@
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .copyRight {
+    color: #000;
+    font-family: latoItalic;
+    font-size: 15px;
+    margin-left: 30px;
+  }
+
+  .links {
+    a {
+      text-decoration: none;
+      color: #000;
+      margin-right: 20px;
+      font-family: latoItalic;
+      font-size: 15px;
+    }
+  }
+
+  img {
+    width: 19px;
+    height: 19px;
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  footer {
+    display: grid;
+    grid-template-areas:
+      "copyRight socials"
+      "links links";
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .copyRight {
+    grid-area: copyRight;
+    justify-self: end;
+  }
+
+  .socials {
+    grid-area: socials;
+    justify-self: start;
+  }
+
+  .links {
+    grid-area: links;
+  }
+}

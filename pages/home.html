@@ -1,0 +1,59 @@
+<div class="home-page-wrapper">
+  <header>
+    <div id="brand"></div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#browse">Browse</a></li>
+        <li><a href="#create_recipe">Create Recipe</a></li>
+        <li><a id="login" href="#login">Login</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Browse</a></li>
+        <li><a href="#create_recipe">Create Recipe</a></li>
+        <li><a id="login" href="#login">Login</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="home-wrapper">
+    <div class="circle-wrapper">
+      <div class="small-circle">
+        Want to be a Jungle Cook? Go ahead and the kitchen is yours!
+      </div>
+      <div class="big-circle">
+        <h1>The Jungle Cook</h1>
+        <p>
+          The home to various recipes of your choice. Add your own recipe today
+          and fill the world with joy!
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // toggle mobile menu
+      $("#hamburger-icon").on("click", () => {
+        $("#hamburger-icon").toggleClass("open");
+      });
+    </script>
+  </div>
+  <footer>
+    <div class="copyRight">Copyright © 2019 The Jungle Cook</div>
+    <div class="links">
+      <a href="#">Login</a>
+      <a href="#">Recipes by Category</a>
+      <a href="#">Privacy and Copyright</a>
+      <a href="#">Create Recipe</a>
+      <a href="#">Your Recipes</a>
+    </div>
+    <div class="socials">
+      <img src="./images/facebook.svg" alt="facebook" />
+      <img src="./images/instagram.svg" alt="instagram" />
+    </div>
+  </footer>
+</div>
