@@ -8,7 +8,7 @@ import {
   signInWithPopup,
   signOut,
   onAuthStateChanged,
-} from "firebase/auth";
+} from ""../node_modules/firebase/auth"";
 
 // firebase config
 const firebaseConfig = {
