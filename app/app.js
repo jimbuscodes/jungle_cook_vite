@@ -1,5 +1,5 @@
 import { changePage } from "../model/model.js";
-import { initializeApp } from "firebase/app";
+import { initializeApp } from "../node_modules/firebase/app";
 import {
   getAuth,
   createUserWithEmailAndPassword,
